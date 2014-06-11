@@ -8,6 +8,8 @@ rescue LoadError
   exit
 end
 
+
+
 spec = eval(File.read('spree.gemspec'))
 Gem::PackageTask.new(spec) do |pkg|
   pkg.gem_spec = spec
